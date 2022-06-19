@@ -32,11 +32,13 @@
             android:gravity="center"
             android:orientation="horizontal">
 
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nameTextInputLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_email"
                 android:layout_margin="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -44,8 +46,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="enter name here"
-                    android:inputType="text"
+                    android:hint="enter email here"
+                    android:inputType="textEmailAddress"
                     android:textSize="20sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -58,9 +60,11 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/courseTextInputLayout"
+                android:id="@+id/courseTextInputLyout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/ic_lock_"
+
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp">
 
@@ -68,38 +72,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+
                     android:ems="10"
-                    android:hint="enter course here"
-                    android:inputType="text"
+                    android:hint="enter password here"
+                    android:inputType="textPassword"
                     android:textSize="20sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/feeTextInputLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="enter fee here"
-                    android:inputType="text"
-                    android:textSize="20sp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -114,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:text="SignIn"
                 android:layout_marginEnd="23dp"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="20sp" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signUpButton"
@@ -122,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="23dp"
                 android:text="Signup"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
