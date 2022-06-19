@@ -17,8 +17,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         doctor=findViewById(R.id.doctorBtn);
-        doctor.setOnClickListener(v -> Toast.makeText(HomeActivity.this, "This is my Toast message!",
-                Toast.LENGTH_LONG).show());
+        doctor.setOnClickListener(v -> Toast.makeText(HomeActivity.this, "This is my Toast message!",Toast.LENGTH_LONG).show());
 
     }
 }

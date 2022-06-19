@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.java.healthcare.view.HomeActivity;
+import org.java.healthcare.view.SignInActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashScreen.this, HomeActivity.class);
+                Intent intent=new Intent(SplashScreen.this, SignInActivity.class);
                 startActivity(intent);
                 finish();
             }
