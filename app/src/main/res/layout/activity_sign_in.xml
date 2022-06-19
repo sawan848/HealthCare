@@ -22,8 +22,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Course Registration"
-                android:textSize="30dp" />
+                android:text="SignIn "
+                android:textSize="30sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,7 +64,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 app:startIconDrawable="@drawable/ic_lock_"
-
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp">
 
@@ -72,7 +71,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-
                     android:ems="10"
                     android:hint="enter password here"
                     android:inputType="textPassword"
