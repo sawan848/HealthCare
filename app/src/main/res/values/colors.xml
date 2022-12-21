@@ -13,4 +13,6 @@
     <color name="btnBg">#2196F3</color>
     <color name="headerColor">#1C94F3</color>
     <color name="cardBg">#E8EEF3</color>
+    <color name="colorWhite">#fff</color>
+    <color name="green">#FF018786</color>
 </resources>
