@@ -6,15 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.SignInActivity">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="101dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
+            android:orientation="vertical">
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,18 +40,18 @@
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Have a Good\nDay"
+                        android:background="@drawable/top_white_background"
                         android:padding="22dp"
-                        android:textSize="40sp"
-                        android:textStyle="bold"
+                        android:text="Have a Good\nDay"
                         android:textAlignment="center"
                         android:textColor="@color/green"
-                        android:background="@drawable/top_white_background"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintVertical_bias="0.3500000"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3500000" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <ImageView
@@ -63,100 +65,102 @@
                     app:srcCompat="@drawable/social" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
                 android:layout_marginStart="32dp"
+                android:text="Your Email"
                 android:textColor="@color/green"
-                android:textStyle="bold"
-                android:text="Your Email" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <EditText
-                android:id="@+id/editTextPersonName"
+                android:id="@+id/editTextPersonEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:textColor="#a2a4b5"
-                android:textColorHint="#a2a4b5"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="Enter Your Email"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/edittext_green"
-                android:layout_marginTop="8dp"
-                />
+                android:ems="10"
+                android:hint="Enter Your Email"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColor="#a2a4b5"
+                android:textColorHint="#a2a4b5"
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
+                android:text="Your Password"
                 android:textColor="@color/green"
-                android:textStyle="bold"
-                android:text="Your Password" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:textColor="#a2a4b5"
-                android:textColorHint="#a2a4b5"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:hint="Enter Your Password"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/edittext_green"
-                android:layout_marginTop="8dp"
-                />
+                android:ems="10"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="#a2a4b5"
+                android:textColorHint="#a2a4b5"
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Forgot Password"
-                android:textColor="@color/green"
                 android:layout_marginTop="8dp"
-                android:textAlignment="viewEnd"
                 android:layout_marginEnd="32dp"
+                android:text="Forgot Password"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/green"
 
                 />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginButton"
+                style="@style/Widget.MaterialComponents.Button.Icon"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                style="@style/Widget.MaterialComponents.Button.Icon"
-                android:text="Log in"
-                android:textSize="22sp"
-                android:padding="4dp"
-                android:textStyle="bold"
-                android:paddingStart="64dp"
-                android:textColor="#ffffff"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:drawableEnd="@drawable/circle_arrow"
                 android:background="@drawable/dark_green_background"
-                />
+                android:drawableEnd="@drawable/circle_arrow"
+                android:padding="4dp"
+                android:paddingStart="64dp"
+                android:text="Log in"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonRegister"
                 style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Don't gave an Account? Register"
                 android:layout_margin="32dp"
                 android:background="@drawable/gray_background"
+                android:text="Don't gave an Account? Register"
                 android:textColor="@color/green"
 
                 />
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
