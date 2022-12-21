@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.java.healthcare.R;
 
 public class HomeActivity extends AppCompatActivity {
-    Button doctor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
