@@ -25,14 +25,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'org.java.healthcare'
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'me.relex:circleindicator:2.1.6'
     testImplementation 'junit:junit:4.13.2'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'com.google.android.material:material:1.7.0'
     implementation "androidx.cardview:cardview:1.0.0"
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

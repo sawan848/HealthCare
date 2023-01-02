@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1111"
+    tools:context=".Activity.DoctorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Hello \nGood Morning "
+                    android:textColor="#5F5656"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="29dp"
+                    tools:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Find Your Desired \nDoctor! "
+                    android:textColor="#000"
+                    android:textSize="34sp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:textStyle="bold" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/search_edit_background"
+                android:drawableStart="@drawable/search"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Search Doctor Medicine etc..."
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#000"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/textViewCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Categories"
+                    android:textColor="#000"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="37dp"
+                    tools:layout_editor_absoluteY="1dp" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="32dp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCategory">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/popular_background"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewDoctor"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/tooth_line_icon" />
+
+                            <TextView
+                                android:id="@+id/textViewDoctor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dental\nSurgon"
+                                android:textColor="#373854"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="32dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/popular_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView51"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/heart_beat_icon" />
+
+                            <TextView
+                                android:id="@+id/textViewHospital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heart\nSurgon"
+                                android:textColor="#373854"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="32dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/popular_background"
+
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewPharmacy"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/eye_icon" />
+
+                            <TextView
+                                android:id="@+id/textViewPharmacy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Eye\nSpecialist"
+                                android:textColor="#373854"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="32dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/popular_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewBloodBank"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/blood_icon" />
+
+                            <TextView
+                                android:id="@+id/textViewBloodBank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blood Bank"
+                                android:textColor="#373854"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_weight="0.333"
+                            android:background="@drawable/popular_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewAmbulance"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ambulance" />
+
+                            <TextView
+                                android:id="@+id/textViewAmbulance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ambulance"
+                                android:textColor="#373854"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:id="@+id/constraintLayoutTopDoctors"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="32dp"-->
+            <!--            android:layout_marginTop="8dp"-->
+            <!--            android:layout_margin="16dp"-->
+            <!--            tools:ignore="MissingConstraints">-->
+            <LinearLayout
+                android:id="@+id/linearLayoutTopDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal"
+
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCategories">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Doctors"
+                    android:textColor="#26273a"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="102dp"
+                    android:text="See All"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#ff5300"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutDoc1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pic_background"
+
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutTopDoctors">
+
+                <ImageView
+                    android:id="@+id/imageViewDoc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewDoc3"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDoc3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewDoc2"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/textViewDoc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="09:25 AM - 13:30 PM"
+                    android:textColor="#262731"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewDoc1"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewDoc1"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDoc3" />
+
+                <ImageView
+                    android:id="@+id/imageViewDoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/doc_1" />
+
+                <TextView
+                    android:id="@+id/textViewDoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Dr. jack willson"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewDoc2"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewDoc2" />
+
+                <TextView
+                    android:id="@+id/textViewDoc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gynecologist and surgeon"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDoc2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDoc2" />
+
+                <TextView
+                    android:id="@+id/textViewDoc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/button_1"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+
+                    android:text="Appointment"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textViewDoc1"
+                    app:layout_constraintTop_toTopOf="@+id/textViewDoc1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutDoc2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pic_background"
+
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutDoc1">
+
+
+                <ImageView
+                    android:id="@+id/imageView2Doc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2Doc3"
+                    app:layout_constraintStart_toStartOf="@+id/textView2Doc3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2Doc2"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/textView2Doc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="10:00 AM - 12:15 PM"
+                    android:textColor="#262731"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2Doc1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2Doc1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2Doc3" />
+
+                <ImageView
+                    android:id="@+id/imageView2Doc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/doc_2" />
+
+                <TextView
+                    android:id="@+id/textView2Doc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Dr.Andy Brown"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2Doc2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2Doc2" />
+
+                <TextView
+                    android:id="@+id/textView2Doc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neurologist"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView2Doc2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2Doc2" />
+
+                <TextView
+                    android:id="@+id/textView2Doc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/button_2"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:text="Appointment"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView2Doc1"
+                    app:layout_constraintTop_toTopOf="@+id/textView2Doc1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pic_background"
+
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutDoc2">
+
+                <ImageView
+                    android:id="@+id/imageView3Doc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3Doc3"
+                    app:layout_constraintStart_toStartOf="@+id/textView3Doc3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3Doc2"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/textView3Doc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="09:25 AM - 13:30 PM"
+                    android:textColor="#262731"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3Doc1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3Doc1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3Doc3" />
+
+                <ImageView
+                    android:id="@+id/imageView3Doc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/doc_3" />
+
+                <TextView
+                    android:id="@+id/textView3Doc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Dr. William Smith"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3Doc2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3Doc2" />
+
+                <TextView
+                    android:id="@+id/textView3Doc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pediatrician"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView3Doc2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3Doc2" />
+
+                <TextView
+                    android:id="@+id/textView3Doc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/button_3"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+
+                    android:text="Appointment"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView3Doc1"
+                    app:layout_constraintTop_toTopOf="@+id/textView3Doc1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

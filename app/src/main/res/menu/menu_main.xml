@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.LabActivity"
+    >
+<!--    <item-->
+<!--        android:id="@+id/action_setting"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="setting"-->
+<!--        android:icon="@drawable/ic_menu"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        />-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="200"
+        android:title="notification"
+        android:icon="@drawable/bell"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

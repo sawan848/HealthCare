@@ -1,4 +1,4 @@
-package org.java.healthcare.view;
+package org.java.healthcare.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
