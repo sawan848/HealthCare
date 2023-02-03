@@ -5,4 +5,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+
+    </style>
 </resources>

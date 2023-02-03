@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    tools:context=".Activity.DoctorProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/pic_background"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:foregroundGravity="center_horizontal"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/doc_1" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Dr. jack willson"
+                android:textColor="#000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <LinearLayout
+                    android:id="@+id/linearLayoutPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/baseline_phone"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayoutChat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/baseline_comment"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayoutVideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/baseline_videocam"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_background"
+        android:layout_marginTop="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewAboutMeT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:paddingLeft="15dp"
+                    android:text="About Doctor"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewAboutMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="32dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Here are some tips to help you prepare for a Java developer interview:
+Review the job description and requirements:
+Arrive on time: Plan to arrive at the interview location at least 10-15 minutes early to allow for any unexpected delays."
+                            app:layout_constraintTop_toBottomOf="@+id/textViewAboutMeT" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTopDoctors"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upcoming Schedules"
+                        android:textColor="#26273a"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayoutDoc1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="0dp"
+                                app:cardElevation="8dp"
+                                android:checkable="true"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:padding="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/gray_background"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/textViewDoc1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="76dp"
+                                    android:layout_marginTop="32dp"
+                                    android:text="09:25 AM - 13:30 PM"
+                                    android:textColor="#262731"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="@+id/textViewDoc2"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textViewDoc2" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:textAlignment="center"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/calendar" />
+
+                                <TextView
+                                    android:id="@+id/textViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consultation"
+                                    android:textColor="#26273a"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageViewDoc2"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewDoc2" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayoutDoc1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="0dp"
+                                app:cardElevation="8dp"
+                                android:checkable="true"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:padding="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/gray_background"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/textViewDoc1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="76dp"
+                                    android:layout_marginTop="32dp"
+                                    android:text="09:25 AM - 13:30 PM"
+                                    android:textColor="#262731"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="@+id/textViewDoc2"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textViewDoc2" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:textAlignment="center"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/calendar" />
+
+                                <TextView
+                                    android:id="@+id/textViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consultation"
+                                    android:textColor="#26273a"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageViewDoc2"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewDoc2" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayoutDoc1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="0dp"
+                                app:cardElevation="8dp"
+                                android:checkable="true"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:padding="4dp"
+                                android:layout_marginBottom="8dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:background="@drawable/gray_background"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/textViewDoc1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="76dp"
+                                    android:layout_marginTop="32dp"
+                                    android:text="09:25 AM - 13:30 PM"
+                                    android:textColor="#262731"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+
+                                    app:layout_constraintBottom_toBottomOf="@+id/textViewDoc2"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textViewDoc2" />
+
+                                <ImageView
+                                    android:id="@+id/imageViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:textAlignment="center"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/calendar" />
+
+                                <TextView
+                                    android:id="@+id/textViewDoc2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consultation"
+                                    android:textColor="#26273a"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toEndOf="@+id/imageViewDoc2"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewDoc2" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Book now"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

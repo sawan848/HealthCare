@@ -86,13 +86,12 @@
                     android:id="@+id/textViewCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
                     android:text="Categories"
                     android:textColor="#000"
                     android:textSize="24dp"
                     android:textStyle="bold"
-                    tools:layout_editor_absoluteX="37dp"
-                    tools:layout_editor_absoluteY="1dp" />
+                    tools:layout_editor_absoluteX="44dp"
+                    tools:layout_editor_absoluteY="2dp" />
 
                 <HorizontalScrollView
                     android:id="@+id/horizontalScrollView"
@@ -304,7 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Top Doctors"
-                    android:textColor="#26273a"
+                    android:textColor="#000"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -315,7 +314,7 @@
                     android:layout_marginStart="102dp"
                     android:text="See All"
                     android:textAlignment="viewEnd"
-                    android:textColor="#ff5300"
+                    android:textColor="#000"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
